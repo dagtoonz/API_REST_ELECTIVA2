@@ -3,10 +3,14 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+
 const router = require("./routes/apiRoutes");
 
 app.use(express.json());
 app.use('/api', router)
+
+app.use(express.json());
+
 
 
 // Rutas
