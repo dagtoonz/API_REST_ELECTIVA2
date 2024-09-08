@@ -2,9 +2,9 @@ const express = require('express')
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
 
-const { postList } = require( '../controllers/postController')
-const { SignUps, createUser } = require( '../controllers/signUpController')
-const { Followcontroller } = require( '../controllers/FollowController')
+const { postList } = require( '../user/interface/postController')
+const { SignUps, createUser } = require( '../user/interface/signUpController')
+const { Followcontroller } = require( '../user/interface/FollowController')
 const users = [];
 
 
