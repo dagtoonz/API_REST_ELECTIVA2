@@ -13,20 +13,17 @@ const SignUps = (request, response) => {
 createUser = async  (req, res) => {
   req.body;
 
-  const { username, name, lastName, avatarURL, email, password, displayName, avatarUrl, bio, birthdate } = req.body;
+  const { username, name, lastName, avatarURL, email, password, birthdate } = req.body;
 
 
   const newUser = {
-    username,
-    email,
     name,
     lastName,
-    avatarURL,
-    password: password,
-    displayName,
-    avatarUrl,
-    bio,
     birthdate,
+    username,
+    email,
+    password: password,
+    avatarURL,
     createdAt: new Date().toISOString()
   };
 

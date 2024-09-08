@@ -7,11 +7,7 @@ const userSchema = new mongoose.Schema({
         unique: true,
         default: () => new mongoose.Types.ObjectId().toString()
     },
-    username: {
-        type: String,
-        required: true,
-        unique: true
-    },
+
     name: {
         type:String,
         required: true
@@ -20,7 +16,13 @@ const userSchema = new mongoose.Schema({
         type:String,
         required: true
     },
-    avatarURL: String,
+    birthdate: Date,
+    username: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    avatarUrl: String,
     email: {
         type: String,
         required: true,
@@ -30,10 +32,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    displayName: String,
-    avatarUrl: String,
-    bio: String,
-    birthdate: Date,
+ 
     createdAt: {
         type: Date,
         default: Date.now
