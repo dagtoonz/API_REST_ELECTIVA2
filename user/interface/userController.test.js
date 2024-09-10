@@ -1,4 +1,4 @@
-const { createUser } = require('./userController');
+const { createUser } = require('../interface/signUpController');
 const UserService = require('../application/UserService');
 const httpMocks = require('node-mocks-http');
 
