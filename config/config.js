@@ -9,13 +9,8 @@ const config = {
   },
 
   mongodb: {
-    url: process.env.MONGODB_URL || 'mongodb://mongo:27017/CLON_X_DATABASE',
-    options: {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      // Add any other MongoDB options you need
-    },
-  },
+    url: process.env.MONGODB_URL || 'mongodb://mongo:27017/CLON_X_DATABASE'
+  }
 }
 
 module.exports =  config ;
